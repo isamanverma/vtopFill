@@ -1,0 +1,22 @@
+{
+   "author": "Amankumar, Yuvraj & Yash",
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "jquery.js", "jquery.BlockUI.js", "bitmaps.js", "coursepage.js", "internalmarkspage.js", "general.js", "captchaparser.js", "content.js" ],
+      "matches": [ "*://vtop.vitbhopal.ac.in/*" ]
+   } ],
+   "description": "The VTOP that you dreamed for",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9Zzmj6hEO0nAkC4zSajIPnQ1wTD+qUZiF4htHfbg69Cz0tRJeRDBWTf0XDnDSZDyaXrIEIr/2yDiZBirR/GTNI0lPQ6BysKzbLqyxeCWJYul0IMSc2cyiOnksHbNDfWq8NlN0vM5L2pNqpVxYZX5E9vAJp0/6FsM/0skcKFjqAzyknXPOLKhUVGXU9bD7IAv62eKtWTX/qTqKdjG7tQnnAc1dGDUU8czlrNBmx/tIvRUjXKn5bWkQmp/0Y5FL9aqdKq7r6j1rXvgXJXvfSAx5ISd/wdU7AxYIIRaMzG5B4zmlbU/jC/kP0TCz8p0nqT3ftw789tInaCnDaJLXOa6lQIDAQAB",
+   "manifest_version": 2,
+   "name": "VIT AUTOFILL",
+   "page_action": {
+      "default_icon": "/images/vit-bhopal-logo.png"
+   },
+   "permissions": [ "webRequest", "downloads", "storage", "declarativeContent", "activeTab", "*://vtop.vitbhopal.ac.in/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0",
+   "web_accessible_resources": [ "styles/general/*.css", "styles/font/*.css", "styles/font/*.ttf" ]
+}
